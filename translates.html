@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOCALIZATION HUB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">PROJECTS <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CLIENTS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <h1>WEBPAGE EUROPE</h1><div class="status status-orange">In Progress</div>
+          <div>
+            <div>Created date:</div>
+            <div>08/12/2019</div>
+          </div>
+          <div>
+            <div>Client:</div>
+            <div>Mercedes-Benz</div>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-12 text-right">
+              <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/archive_icon_sm.svg"> Archive</a>
+              <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/delete_icon_sm.svg"> Delete</a>
+              <a href="#" class="btn btn-icon"><img src="assets/images/cancel_icon.svg"> Cancel</a>
+              <a href="#" class="btn btn-icon"><img src="assets/images/save_icon.svg"> Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" width="18%">Project name</th>
+                <th scope="col">Client</th>
+                <th scope="col">Files</th>
+                <th scope="col">Status <a href="" class="btn btn-xs icon-rotate-180"><img src="assets/images/refresh_icon_button.svg"> Refresh</a></th>
+                <th scope="col">Source lng</th>
+                <th scope="col">Target lng</th>
+                <th scope="col">Created date</th>
+                <th scope="col">Due date</th>
+                <th scope="col" width="14%">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="">Landing Page For European Market</a></td>
+                <td>BMW</td>
+                <td>12</td>
+                <td><div class="status">New</div></td>
+                <td>EN</td>
+                <td>EN, DE, ES</td>
+                <td>08/12/2019</td>
+                <td>08/12/2019</td>
+                <td class="icons">
+                  <a href="#" data-toggle="tooltip" title="Download"><img src="assets/images/download_cell.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Edit"><img src="assets/images/edit_cell.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 text-right">
+            <a href="#" class="btn btn-icon"><img src="assets/images/add_icon_button.svg"> Get ZIP</a>
+            <a href="#" class="btn btn-icon btn-green"><img src="assets/images/add_icon_button.svg"> Upload</a>
+            <a href="#" class="btn btn-icon btn-turquoise"><img src="assets/images/add_icon_button.svg"> Send for translation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-confirm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Are you sure?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/images/cancel_icon.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to delete project "Project name"?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-icon btn-confirm"><img src="assets/images/cancel_icon.svg"> Yes</button>
+          <button type="button" class="btn btn-icon" data-dismiss="modal"><img src="assets/images/cancel_icon.svg"> No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="dist/main.js"></script>
+</body>
+</html>
