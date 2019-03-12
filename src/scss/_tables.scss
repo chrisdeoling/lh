@@ -1,0 +1,46 @@
+.table td, .table th {
+  vertical-align: middle;
+  border-top: none;
+}
+
+.table thead th {
+  line-height:10px;
+  vertical-align: middle;
+  color: map_get($colors, 'gray-text');
+  font-size:12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 1px solid map_get($colors, 'gray-text');
+  letter-spacing: 0.05em;
+  padding: .55rem;
+  padding-left:18px;
+
+  .btn{
+    background-color:map_get($colors, 'th-button');
+    color: map_get($colors, 'navy-text');
+    margin-left:12px;
+  }
+}
+
+.table td {
+  border-bottom: 1px solid map_get($colors, 'td-border');
+  padding: 22px 22px 22px 18px;
+
+  a{
+    color:map_get($colors, 'navy-text');
+  }
+
+  &.icons a{
+    display: inline-block;
+    padding:1px 6px 1px 6px;
+    margin-right:4px;
+  }
+
+  &.icons a:last-child{
+    margin-right:0px;
+  }
+}
+
+.table-hover tbody tr:hover td{
+  background-color: map_get($colors, 'turquoise-light');
+}

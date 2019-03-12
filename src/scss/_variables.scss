@@ -1,0 +1,20 @@
+// GRADIENT
+@function nav-gradient() {
+  @return linear-gradient(180deg, #27505D 0%, #003040 100%);
+}
+
+// COLORS
+$colors: (
+    'navy-text': #003040,
+    'gray-text': #7FA3A8,
+    'turquoise-light': #F2F9FA,
+    'turquoise': #57DCEE,
+    'button-green': #62D792,
+    'button-gray': #CEE0E3,
+    'placeholder': #CEE0E3,
+    'input-border':#CEE0E3,
+    'th-button': #F2F2F2,
+    'td-border': #F2F2F2,
+
+
+);

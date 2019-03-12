@@ -1,0 +1,57 @@
+#login-page{
+
+  background-image:url('/assets/images/login_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:100%;
+  display: flex;
+  align-items: center;
+
+  h1{
+    margin-bottom: 34px;
+  }
+
+  .container{
+    margin-top:-80px;
+  }
+
+  .login-block{
+    background: #FFFFFF;
+    max-width: 450px;
+    padding:42px 48px 55px 48px;
+    margin-top:80px;
+
+    .login-footer{
+      margin-top: 35px;
+      min-height:45px;
+
+      .custom-checkbox{
+        margin-bottom: 10px;
+      }
+
+      a{
+        color: map_get($colors, 'link-turquoise');
+        text-decoration: underline;
+        font-size:12px;
+      }
+    }
+
+  }
+
+  .login-info{
+
+    max-width: 380px;
+
+    .login-text{
+      color:#ffffff;
+      font-size:16px;
+      margin-top:40px;
+      text-align: left;
+      margin-bottom: 40px;
+      letter-spacing: 0.05em;
+    }
+  }
+
+
+}

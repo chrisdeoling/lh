@@ -1,0 +1,38 @@
+.dropdown-toggle{
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.dropdown-toggle::after {
+  margin-left:10px;
+}
+
+.dropdown-menu{
+
+  .dropdown-item{
+    font-size: 14px;
+    padding:11px 62px 11px 17px;
+    font-weight: 700;
+    color: map_get($colors, 'gray-text');
+
+    &.tab{
+      padding-left:45px;
+    }
+
+    &.active{
+      color: map_get($colors, 'navy-text');
+      background-color: transparent;
+
+      &:hover{
+        background-color: transparent;
+      }
+    }
+
+    &:hover{
+      background-color: map_get($colors, 'turquoise-light');
+    }
+  }
+
+}
