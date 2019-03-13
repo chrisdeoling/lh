@@ -13,6 +13,11 @@ body{
   padding-top: 90px;
 }
 
+body.without-menu{
+  padding-top: 0px;
+}
+
+
 textarea:focus, input:focus, select:focus{
   outline: none;
 }
