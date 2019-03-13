@@ -25,7 +25,7 @@
 .table td {
   border-bottom: 1px solid map_get($colors, 'td-border');
   padding: 22px 22px 22px 18px;
-
+  color:map_get($colors, 'navy-text');
   a{
     color:map_get($colors, 'navy-text');
   }
@@ -38,6 +38,9 @@
 
   &.icons a:last-child{
     margin-right:0px;
+  }
+  &.danger-cell{
+    color:#B50F24;
   }
 }
 
