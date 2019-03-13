@@ -178,17 +178,41 @@ select.form-control{
   padding-top:120px;
   padding-bottom: 30px;
 
+  &.header-bg{
+    background-color: map_get($colors, 'turquoise-light');
+  }
+
   .btn{
     margin-top:2px;
   }
 
   h1{
     margin-top:15px;
+    margin-right:17px;
   }
 
   .drag-field{
     margin-left:15px;
     width:49%;
+  }
+
+  .status, .info-block{
+    margin-right:37px;
+  }
+
+  .status{
+    margin-top: 13px;
+  }
+
+  .info-block{
+    margin-top:10px;
+    font-size: 12px;
+
+    .title{
+      text-transform: uppercase;
+      color: map_get($colors, 'gray-text');
+      letter-spacing: 0.05em;
+    }
   }
 }
 
