@@ -1,0 +1,96 @@
+.btn{
+  background: map_get($colors, 'button-gray');
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  padding:10px 40px 11px 40px;
+  outline: none;
+  margin-left:15px;
+  margin-right: 0px;
+  position: relative;
+  white-space: nowrap;
+
+  &:hover{
+    background:lighten(map_get($colors, 'button-gray'), 5%);
+  }
+
+  img{
+  }
+
+  &.btn-icon{
+    padding-left:38px;
+    padding-right: 14px;
+
+    img{
+      margin-right:8px;
+      position: absolute;
+      left:12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &.btn-xs{
+    font-size: 10px;
+    padding:3px 5px;
+    margin-left:7px;
+
+    &.btn-icon{
+      padding-left:23px;
+      padding-right: 10px;
+
+      img{
+        margin-right: 4px;
+        left:8px;
+      }
+    }
+  }
+
+  &.icon-rotate-90, &.icon-rotate-180{
+    img{
+      -webkit-transition: -webkit-transform .5s ease-in-out;
+      transition: transform .5s ease-in-out;
+    }
+  }
+
+  &.icon-rotate-90{
+    &:hover img{
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+
+  &.icon-rotate-180{
+    &:hover img{
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+
+  &.btn-transparent{
+    background-color: transparent;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &.btn-turquoise{
+    background: map_get($colors, 'turquoise');
+
+    &:hover{
+      background:lighten(map_get($colors, 'turquoise'), 8%);
+    }
+  }
+
+  &.btn-green{
+    background: map_get($colors, 'button-green');
+
+    &:hover{
+      background:lighten(map_get($colors, 'button-green'), 8%);
+    }
+  }
+
+}

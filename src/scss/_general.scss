@@ -151,67 +151,6 @@ select.form-control{
     padding:20px;
   }
 
-  .modal-footer .btn{
-    margin-left:15px;
-    margin-right: 0px;
-  }
-
-}
-
-.btn{
-  background: map_get($colors, 'button-gray');
-  border-radius: 3px;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  padding-top:10px;
-  padding-bottom: 11px;
-  padding-left:40px;
-  padding-right:40px;
-  outline: none;
-
-  img{
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    transition: transform .5s ease-in-out;
-  }
-
-  &.btn-xs{
-    font-size: 10px;
-    padding:3px 5px;
-  }
-
-  &.btn-icon{
-    padding-left:13px;
-    padding-right: 18px;
-  }
-
-  &.btn-icon img{
-    margin-right:8px;
-  }
-
-  &.icon-rotate-90:hover img{
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
-
-  &.icon-rotate-180:hover img{
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
-
-
-.btn-icon{
-
-}
-
-.btn-turquoise{
-  background: map_get($colors, 'turquoise');
-
-  &:hover{
-    background:lighten(map_get($colors, 'turquoise'), 8%);
-  }
 }
 
 .drag-field{
@@ -225,7 +164,7 @@ select.form-control{
   color: map_get($colors, 'gray-text');
   border:1px dashed map_get($colors, 'input-border');
   border-radius: 3px;
-  padding-top:16px;
+  padding:16px 16px 0px 16px;
   height:48px;
 
   a{
@@ -235,13 +174,8 @@ select.form-control{
   }
 }
 
-.page{
-  padding-bottom: 100px;
-  padding-top:90px;
-}
-
 .header{
-  padding-top:30px;
+  padding-top:120px;
   padding-bottom: 30px;
 
   .btn{
@@ -251,6 +185,16 @@ select.form-control{
   h1{
     margin-top:15px;
   }
+
+  .drag-field{
+    margin-left:15px;
+    width:49%;
+  }
+}
+
+.page{
+  padding-bottom: 100px;
+  padding-top:0px;
 }
 
 .fixed-footer{
@@ -260,10 +204,6 @@ select.form-control{
   width:100%;
   bottom:0px;
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
-
-  .footer-content{
-    width:61%;
-  }
 
   .pagination{
     margin-top:0px;
@@ -296,6 +236,10 @@ select.form-control{
 
   }
 
+  .btn, .entries{
+    margin-top:17px;
+  }
+
   .entries{
     max-width: 210px;
     color: map_get($colors, 'gray-text');
@@ -303,7 +247,7 @@ select.form-control{
     font-size: 12px;
     letter-spacing: 0.05em;
     font-weight: 700;
-    margin-top:16px;
+
 
     span{
       display: inline-block;
