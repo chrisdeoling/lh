@@ -133,6 +133,7 @@ select.form-control{
     .close{
       position: absolute;
       right:25px;
+      font-size:0;
     }
 
     .modal-title{
@@ -145,6 +146,35 @@ select.form-control{
 
   .modal-body{
     padding:2rem;
+
+    .col{
+      margin-bottom: 60px;
+    }
+
+    .modal-label{
+      line-height: 20px;
+      font-size: 15px;
+      color: #1A4B61;
+      margin-bottom:20px;
+    }
+
+    .modal-files-names{
+
+      ul{
+        list-style:none;
+        padding:0;
+
+        li{
+          margin-bottom:15px;
+
+          img{
+            margin: 0 10px;
+            position: relative;
+            top: -1px;
+          }
+        }
+      }
+    }
   }
 
   .modal-footer{
@@ -261,7 +291,9 @@ select.form-control{
     }
   }
 }
-
+.grey{
+  color:map_get($colors, 'button-gray');
+}
 
 .status{
   display: inline-block;
