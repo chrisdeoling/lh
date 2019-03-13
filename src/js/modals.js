@@ -25,3 +25,9 @@ export const initModalConfirm = () => {
     modalConfirm.modal("show");
   });
 }
+export const initModalZip = () => {
+  $(".header .drag-field").on("click", function(e){
+    var modalZip = $("#modal-zip");
+    modalZip.modal("show");
+  });
+}

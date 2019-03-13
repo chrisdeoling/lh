@@ -6,6 +6,7 @@ import * as MODALS from './modals';
     $(document).ready(() => {
         $('[data-toggle="tooltip"]').tooltip();
         MODALS.initModalConfirm();
+        MODALS.initModalZip();
     });
 
 })($);
