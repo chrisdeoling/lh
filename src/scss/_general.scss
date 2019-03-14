@@ -63,15 +63,19 @@ label{
 .custom-control-label::before{
   border: map_get($colors, 'input-border') solid 1px;
   margin-top:0px;
-  padding-right:20px;
 }
 
 .custom-control-label::before,
 .custom-control-label::after {
   top: 0rem;
-  width: 20px;
+  width: 22px;
   height: 20px;
   left: -1.9rem;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+  border-color: map_get($colors, 'input-border');
+  background-color: map_get($colors, 'navy-text') !important;
 }
 
 .form-group{
@@ -80,6 +84,13 @@ label{
 
 select.form-control{
   border-radius: 6px;
+  position: relative;
+}
+
+select.custom-select{
+  background-image:url("/assets/images/select_bg.png");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .form-control{
@@ -209,7 +220,6 @@ select.form-control{
 
   a{
     color: map_get($colors, 'turquoise');
-    text-decoration: underline;
     font-size:12px;
   }
 }
@@ -232,7 +242,6 @@ select.form-control{
   }
 
   .drag-field{
-    margin-left:15px;
     width:100%;
   }
 
@@ -352,31 +361,4 @@ select.form-control{
 }
 .grey{
   color:map_get($colors, 'button-gray');
-}
-
-.status{
-  display: inline-block;
-  background: #AFC6C9;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: capitalize;
-  color:#ffffff;
-  min-width: 90px;
-  height:24px;
-  padding-top:4px;
-  padding-bottom: 5px;
-}
-
-.status-green{
-  background: #3F9D66;
-}
-
-.status-orange{
-  background: #EB5B25;
-}
-
-.status-blue{
-  background: #1A4B61;
 }

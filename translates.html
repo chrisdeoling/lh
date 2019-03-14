@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-12 d-flex justify-content-start">
           <h1>WEBPAGE EUROPE</h1>
-          <div class="status status-orange">In Progress</div>
+          <div class="status status-orange status-circle">In Progress</div>
           <div class="info-block">
             <div class="title">Created date:</div>
             <div clsss="value">08/12/2019</div>
@@ -46,8 +46,8 @@
         <div class="col-md-5 col-sm-12 text-right">
           <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/archive_icon_sm.svg"> Archive</a>
           <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/delete_icon_sm.svg"> Delete</a>
-          <a href="#" class="btn btn-icon"><img src="assets/images/cancel_icon.svg"> Cancel</a>
-          <a href="#" class="btn btn-icon"><img src="assets/images/save_icon.svg"> Save</a>
+          <a href="#" class="btn btn-icon ml-3"><img src="assets/images/cancel_icon.svg"> Cancel</a>
+          <a href="#" class="btn btn-icon ml-3"><img src="assets/images/save_icon.svg"> Save</a>
         </div>
       </div>
     </div>
@@ -64,20 +64,22 @@
   <div class="header">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <label for="translationSystem">* Translation system</label>
-          <select class="form-control" id="translationSystem">
+          <select class="form-control custom-select" id="translationSystem">
             <option>MemoQ</option>
           </select>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <label for="translationSystem">Translation system settings</label>
-          <select class="form-control" id="translationSystem">
+          <select class="form-control custom-select" id="translationSystem">
             <option>MemoQ - Premium package</option>
           </select>
         </div>
-        <div class="col-md-4">
-            <label for="translationSystem">&nbsp;</label>
+        <div class="col-md-2 pl-0 d-flex align-items-end">
+          <a href="" id="apply-all" class="btn btn-sm btn-transparent btn-icon"><img src="assets/images/apply_to_all_icon.svg">Apply to all</a>
+        </div>
+        <div class="col-md-4 d-flex align-items-end">
           <div class="drag-field">
             Drag or <a href="">add zip</a> from the device
           </div>
@@ -93,30 +95,128 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th scope="col" width="18%">Project name</th>
-                <th scope="col">Client</th>
-                <th scope="col">Files</th>
+                <th scope="col">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-all">
+                    <label class="custom-control-label" for="checkbox-all">Language</label>
+                  </div>
+                </th>
+                <th scope="col">File name</th>
                 <th scope="col">Status <a href="" class="btn btn-xs icon-rotate-180"><img src="assets/images/refresh_icon_button.svg"> Refresh</a></th>
-                <th scope="col">Source lng</th>
-                <th scope="col">Target lng</th>
-                <th scope="col">Created date</th>
-                <th scope="col">Due date</th>
-                <th scope="col" width="14%">Actions</th>
+                <th scope="col">Translation system</th>
+                <th class="text-right" scope="col">Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><a href="">Landing Page For European Market</a></td>
-                <td>BMW</td>
-                <td>12</td>
+                <td colspan="4">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-lang-1">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-lang-1">English - Spanish</label>
+                  </div>
+                </td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox ml-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-file-1">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-file-1">Spanish</label>
+                  </div>
+                </td>
+                <td>Landing_page_es.doc</td>
                 <td><div class="status">New</div></td>
-                <td>EN</td>
-                <td>EN, DE, ES</td>
-                <td>08/12/2019</td>
-                <td>08/12/2019</td>
-                <td class="icons">
-                  <a href="#" data-toggle="tooltip" title="Download"><img src="assets/images/download_cell.svg"/></a>
-                  <a href="#" data-toggle="tooltip" title="Edit"><img src="assets/images/edit_cell.svg"/></a>
+                <td>ZIP</td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Settings"><img src="assets/images/settings_icon.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox ml-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-file-2">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-file-2">Spanish</label>
+                  </div>
+                </td>
+                <td>Landing_page_es.doc</td>
+                <td><div class="status status-blue">Translated</div></td>
+                <td>ZIP</td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Settings"><img src="assets/images/settings_icon.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox ml-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-file-3">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-file-3">Spanish</label>
+                  </div>
+                </td>
+                <td>Landing_page_es.doc</td>
+                <td><div class="status status-orange">In Progress</div></td>
+                <td>ZIP</td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Settings"><img src="assets/images/settings_icon.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-lang-2">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-lang-2">English - German</label>
+                  </div>
+                </td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox ml-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-file-4">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-file-4">Spanish</label>
+                  </div>
+                </td>
+                <td>Landing_page_es.doc</td>
+                <td><div class="status">New</div></td>
+                <td>ZIP</td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Settings"><img src="assets/images/settings_icon.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox ml-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-file-5">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-file-5">Spanish</label>
+                  </div>
+                </td>
+                <td>Landing_page_es.doc</td>
+                <td><div class="status status-blue">Translated</div></td>
+                <td>ZIP</td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Settings"><img src="assets/images/settings_icon.svg"/></a>
+                  <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="custom-control custom-checkbox ml-5">
+                    <input type="checkbox" class="custom-control-input" id="checkbox-file-6">
+                    <label class="custom-control-label font-weight-bold" for="checkbox-file-6">Spanish</label>
+                  </div>
+                </td>
+                <td>Landing_page_es.doc</td>
+                <td><div class="status status-orange">In Progress</div></td>
+                <td>ZIP</td>
+                <td class="icons text-right">
+                  <a href="#" data-toggle="tooltip" title="Settings"><img src="assets/images/settings_icon.svg"/></a>
                   <a href="#" data-toggle="tooltip" title="Delete" data-confirm=""><img src="assets/images/delete_icon.svg"/></a>
                 </td>
               </tr>
@@ -131,9 +231,9 @@
         <div class="row">
           <div class="col-md-6"></div>
           <div class="col-md-6 text-right">
-            <a href="#" class="btn btn-icon"><img src="assets/images/download_icon.svg"> Get ZIP</a>
-            <a href="#" class="btn btn-icon btn-green" style="padding-left:42px;"><img src="assets/images/upload_icon.svg"> Upload</a>
-            <a href="#" class="btn btn-icon btn-turquoise"><img src="assets/images/send_icon.svg"> Send for translation</a>
+            <a href="#" class="btn btn-icon ml-3"><img src="assets/images/download_icon.svg"> Get ZIP</a>
+            <a href="#" class="btn btn-icon btn-green ml-3" style="padding-left:42px;"><img src="assets/images/upload_icon.svg"> Upload</a>
+            <a href="#" class="btn btn-icon btn-turquoise ml-3"><img src="assets/images/send_icon.svg"> Send for translation</a>
           </div>
         </div>
       </div>
