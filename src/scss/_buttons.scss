@@ -30,6 +30,18 @@
       top: 50%;
       transform: translateY(-50%);
     }
+
+    &.btn-icon-right{
+      padding-left:14px;
+      padding-right: 40px;
+      img{
+        margin-left:8px;
+        right:12px;
+        left:initial;
+        margin-right:0;
+      }
+    }
+
   }
 
   &.btn-xs{
@@ -45,6 +57,18 @@
         margin-right: 4px;
         left:8px;
       }
+
+      &.btn-icon-right{
+        padding-left:10px;
+        padding-right: 23px;
+        img{
+          margin-left:4px;
+          right:8px;
+          left:initial;
+          margin-right:0;
+        }
+      }
+
     }
   }
 
