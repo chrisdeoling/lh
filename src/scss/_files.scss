@@ -8,6 +8,7 @@
   margin-right: 5px;
   color:#FFF;
 }
+
 .file-lang{
   background: map_get($colors, 'button-gray');
   border-radius: 14px;
@@ -17,4 +18,119 @@
   font-weight:500;
   padding:5px 20px 5px 18px;
   color: map_get($colors, 'navy-text');
+}
+
+.connectors-container{
+  margin:0 15px 40px;
+
+  & > .row{
+    overflow-x:auto;
+  }
+
+  .connector-box{
+    padding: 15px 10px 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor:pointer;
+
+    &.active,&:hover{
+      background: #F2F9FA;
+    }
+    .connector-icon{
+      margin-bottom:6px;
+      height:70px;
+      position:relative;
+
+      img{
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        left:0;
+        right:0;
+        margin: auto;
+      }
+    }
+    .connector-name{
+      font-size:11px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+.files-container{
+  max-width:700px;
+
+  .files-col-first{
+    border-right:1px solid #F2F2F2;
+  }
+}
+
+
+
+.col-box{
+  margin-left: 15px;
+  margin-top: 20px;
+
+  .col-head{
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: map_get($colors, 'gray-text');
+    margin-bottom: 25px;
+  }
+
+  .selected-files{
+
+    ul{
+      padding:2px 0  0;
+      list-style:none;
+
+      li{
+
+        width:235px;
+        position:relative;
+        padding:0 35px;
+        margin-bottom: 18px;
+        .file-icon{
+          max-width:18px;
+          position: absolute;
+          top:-1px;
+          left:0;
+        }
+
+        .remove-icon{
+          width:18px;
+          position: absolute;
+          top:0px;
+          right:0;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+
+  .drag-field{
+    padding-top:130px;
+    padding-bottom: 140px;
+  }
+}
+
+.jstree {
+
+  .jstree-wholerow-hovered, .jstree-wholerow-clicked{
+    background: none;
+  }
+  .jstree-open{
+
+    & >.jstree-children{
+      margin-top: 10px;
+
+      .jstree-node{
+        margin-top: 10px;
+      }
+    }
+  }
 }

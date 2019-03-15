@@ -1,4 +1,5 @@
 import * as MODALS from './modals';
+import * as FILES from './files';
 
 (function () {
     'use strict';
@@ -7,6 +8,7 @@ import * as MODALS from './modals';
         $('[data-toggle="tooltip"]').tooltip();
         MODALS.initModalConfirm();
         MODALS.initModalZip();
+        FILES.initFiles();
     });
 
 })($);
