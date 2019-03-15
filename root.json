@@ -1,0 +1,31 @@
+[{
+  "text":"Root_node",
+  "children":[
+    {
+      "text":"Child_node_1",
+      "children":[
+        {
+          "type":"file",
+          "text":"File_1"
+        },
+        {
+          "type":"file",
+          "text":"File_2"
+        }
+      ]
+    },
+    {
+      "text":"Child_node_2",
+      "children":[
+        {
+          "text":"Child_node_21",
+          "children" : true
+        },
+        {
+          "type":"file",
+          "text":"File_3"
+        }
+      ]
+    }
+  ]
+}]
