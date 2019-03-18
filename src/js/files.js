@@ -27,7 +27,7 @@ export const initFiles = () => {
           'data' : {
             'url' : function (node) {
               //var user_id = $('#client-select').val();
-              return node.id === '#' ? 'http://localhost:8080/root.json' : '';
+              return node.id === '#' ? '/root.json' : '';
               //'/structure?user_id='+user_id+'&id='+root :
             //  '/structure?user_id='+user_id+'&id='+node.id;
             },

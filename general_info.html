@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>General info</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/jstree/dist/themes/default/style.min.css">
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">LOCALIZATION HUB</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="projects.html">PROJECTS <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clients.html">CLIENTS' USERS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header header-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12 d-flex justify-content-start">
+          <h1>WEBPAGE EUROPE</h1>
+          <div class="status status-orange status-circle">In Progress<div class="pulse-ring"></div></div>
+          <div class="info-block">
+            <div class="title">Created date:</div>
+            <div clsss="value">08/12/2019</div>
+          </div>
+          <div class="info-block">
+            <div class="title">Client:</div>
+            <div class="value">Mercedes-Benz</div>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12 text-right">
+          <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/archive_icon_sm.svg"> Archive</a>
+          <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/delete_icon_sm.svg"> Delete</a>
+          <a href="#" class="btn btn-icon ml-3"><img src="assets/images/cancel_icon.svg"> Cancel</a>
+          <a href="#" class="btn btn-icon ml-3"><img src="assets/images/save_icon.svg"> Save</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tabs-menu d-flex justify-content-center">
+      <a href="general_info.html" class="active">General info</a>
+      <a href="connectors.html" class="disabled">Files</a>
+      <a href="translations.html" class="disabled">Translations</a>
+    </div>
+  </div>
+
+  <div class="page mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col walktrough">
+          <div class="walktrough-close"><img src="assets/images/walk_close.svg"></div>
+          <p>WALKTHROUGH</p>
+          <p>Select drive and files for transaltion. </p>
+        </div>
+        <div class="col-md-8 col-xs-12">
+            <div class="row">
+              <div class="col">
+                <div class="form-group">
+                  <label for="project-name">* Project Name</label>
+                  <input type="text" name="name" id="project-name" class="form-control" placeholder="Name of the project..." required>
+                </div>
+                <div class="form-group">
+                  <label for="client">* Client</label>
+                  <select class="form-control custom-select" id="client" required>
+                    <option value="">- select -</option>
+                    <option>Client 1</option>
+                    <option>Client 2</option>
+                    <option>Client 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-group">
+                  <label for="project-name">Source Language</label>
+                  <input type="text" name="name" id="project-name" class="form-control" placeholder="Name of the project..." required>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6 text-right">
+            <a href="connectors.html" class="btn btn-icon btn-turquoise btn-icon-right">Next <img src="assets/images/next.svg"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/jstree/dist/jstree.min.js"></script>
+  <script src="dist/main.js"></script>
+</body>
+</html>
