@@ -215,7 +215,11 @@ select.custom-select{
   color: map_get($colors, 'gray-text');
   border:1px dashed map_get($colors, 'input-border');
   border-radius: 3px;
+<<<<<<< HEAD
   padding:16px 16px 0px 16px;
+=======
+  padding:17px 2px 0px 2px;
+>>>>>>> df5f549fcf202c05b6b5245661bc374214587ac2
   height:48px;
 
   a{
@@ -295,8 +299,9 @@ select.custom-select{
   text-decoration:none;
 }
 
-.tabs-menu a.further{
+.tabs-menu a.disabled{
   color: rgba(26, 75, 97, 0.3);
+  pointer-events: none;
 }
 
 .walktrough{

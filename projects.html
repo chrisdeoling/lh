@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
             <a class="nav-link" href="projects.html">PROJECTS <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="clients.html">CLIENTS</a>
+            <a class="nav-link" href="clients.html">CLIENTS' USERS</a>
           </li>
         </ul>
       </div>
@@ -70,15 +71,15 @@
           <table class="table table-hover">
             <thead>
               <tr>
-                <th scope="col" width="18%">Project name</th>
+                <th scope="col" width="24%">Project name</th>
                 <th scope="col">Client</th>
                 <th scope="col">Files</th>
-                <th scope="col">Status <a href="" class="btn btn-xs icon-rotate-180"><img src="assets/images/refresh_icon_button.svg"> Refresh</a></th>
-                <th scope="col">Source lng</th>
-                <th scope="col">Target lng</th>
-                <th scope="col">Created date</th>
+                <th scope="col" width="18%">Status <a href="" class="btn btn-xs icon-rotate-180"><img src="assets/images/refresh_icon_button.svg"> Refresh</a></th>
+                <th scope="col">Source&nbsp;lng</th>
+                <th scope="col" width="10%">Target&nbsp;lng</th>
+                <th scope="col">Created&nbsp;date</th>
                 <th scope="col">Due date</th>
-                <th scope="col" width="14%">Actions</th>
+                <th scope="col" width="18%">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -334,7 +335,7 @@
           <div class="col-md-4 d-flex justify-content-start">
             <div class="entries">
               <span>show</span>
-              <select class="form-control"><option>20</option></select>
+              <select class="form-control" disabled><option>20</option></select>
               <span>entries</span>
             </div>
           </div>
@@ -365,8 +366,8 @@
           Are you sure you want to delete project "Project name"?
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-icon btn-confirm"><img src="assets/images/cancel_icon.svg"> Yes</button>
-          <button type="button" class="btn btn-icon" data-dismiss="modal"><img src="assets/images/cancel_icon.svg"> No</button>
+          <button type="button" class="btn btn-icon btn-confirm"><i class="material-icons">check</i> Yes</button>
+          <button type="button" class="btn btn-icon" data-dismiss="modal"><i class="material-icons">close</i> No</button>
         </div>
       </div>
     </div>

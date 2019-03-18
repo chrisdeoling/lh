@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/jstree/dist/themes/default/style.min.css">
+  <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
             <a class="nav-link" href="projects.html">PROJECTS <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="clients.html">CLIENTS</a>
+            <a class="nav-link" href="clients.html">CLIENTS' USERS</a>
           </li>
         </ul>
       </div>
@@ -34,7 +35,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-12 d-flex justify-content-start">
           <h1>WEBPAGE EUROPE</h1>
-          <div class="status status-orange">In Progress</div>
+          <div class="status status-orange status-circle">In Progress<div class="pulse-ring"></div></div>
           <div class="info-block">
             <div class="title">Created date:</div>
             <div clsss="value">08/12/2019</div>
@@ -47,8 +48,8 @@
         <div class="col-md-5 col-sm-12 text-right">
           <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/archive_icon_sm.svg"> Archive</a>
           <a href="#" class="btn btn-xs btn-icon btn-transparent"><img src="assets/images/delete_icon_sm.svg"> Delete</a>
-          <a href="#" class="btn btn-icon"><img src="assets/images/cancel_icon.svg"> Cancel</a>
-          <a href="#" class="btn btn-icon"><img src="assets/images/save_icon.svg"> Save</a>
+          <a href="#" class="btn btn-icon ml-3"><img src="assets/images/cancel_icon.svg"> Cancel</a>
+          <a href="#" class="btn btn-icon ml-3"><img src="assets/images/save_icon.svg"> Save</a>
         </div>
       </div>
     </div>
@@ -56,9 +57,9 @@
 
   <div class="container">
     <div class="tabs-menu d-flex justify-content-center">
-      <a href="general.html">General info</a>
-      <a href="files.html" class="active">Files</a>
-      <a href="translations.html"  class="further">Translations</a>
+      <a href="general_info.html">General info</a>
+      <a href="connectors.html" class="active">Files</a>
+      <a href="translations.html"  class="disabled">Translations</a>
     </div>
   </div>
 
@@ -174,10 +175,10 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <a href="#" class="btn btn-icon btn-transparent"><img src="assets/images/prev.svg"/> Back</a>
+            <a href="general_info.html" class="btn btn-icon btn-transparent"><img src="assets/images/prev.svg"/> Back</a>
           </div>
           <div class="col-md-6 text-right">
-            <a href="#" class="btn btn-icon btn-turquoise btn-icon-right">Next <img src="assets/images/next.svg"/></a>
+            <a href="translations.html" class="btn btn-icon btn-turquoise btn-icon-right">Next <img src="assets/images/next.svg"/></a>
           </div>
         </div>
       </div>
