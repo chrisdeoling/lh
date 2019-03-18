@@ -63,6 +63,13 @@ export const initFiles = () => {
 
       });
     }
+  });
 
+  $(document).on('click', '.walktrough .walktrough-close', function () {
+    $(this).parent().css('visibility','hidden');
+  });
+
+  $(document).on('click', 'li > .remove-icon', function () {
+    $(this).parent().remove();
   });
 }

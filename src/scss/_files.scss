@@ -2,7 +2,7 @@
   font-weight: 900;
   line-height: 20px;
   font-size: 9px;
-  background: map_get($colors, 'gray-text');
+  background: map_get($colors, 'gray-backgorund');
   border-radius: 3px;
   padding: 2px 4px;
   margin-right: 5px;
@@ -59,7 +59,6 @@
 }
 
 .files-container{
-  max-width:700px;
 
   .files-col-first{
     border-right:1px solid #F2F2F2;
@@ -89,7 +88,7 @@
 
       li{
 
-        width:235px;
+        width:305px;
         position:relative;
         padding:0 35px;
         margin-bottom: 18px;
