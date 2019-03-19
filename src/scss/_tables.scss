@@ -1,6 +1,16 @@
 .table td, .table th {
   vertical-align: middle;
   border-top: none;
+
+  .material-icons{
+    width:22px;
+    color:map_get($colors, 'gray-text');
+  }
+  .checked{
+    .material-icons{
+      color:#FDC318;
+    }
+  }
 }
 
 .table thead th {
@@ -26,6 +36,10 @@
   border-bottom: 1px solid map_get($colors, 'td-border');
   padding: 24px 22px 20px 18px;
   color:map_get($colors, 'navy-text');
+
+  &:last-child{
+    padding-right:.55rem;
+  }
   a{
     color:map_get($colors, 'navy-text');
   }
@@ -41,6 +55,9 @@
   }
   &.danger-cell{
     color:#B50F24;
+  }
+  .custom-control-label{
+    font-size:14px;
   }
 }
 
