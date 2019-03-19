@@ -258,12 +258,16 @@ select.custom-select{
   padding-left:15px;
   font-size:15px;
   height:48px;
-  font-size:18px;
+  font-size:16px;
   color:map_get($colors, 'navy-text');
 
   &:focus{
     border: 1px solid #27505D;
   }
+}
+
+input[type="text"].form-control{
+  font-size:18px;
 }
 
 .inner-addon {
