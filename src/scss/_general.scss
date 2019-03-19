@@ -188,6 +188,7 @@ h1{
 
 a, a:hover{
   color: map_get($colors, 'navy-text');
+  text-decoration:none;
 }
 
 label{
@@ -344,6 +345,10 @@ input[type="text"].form-control{
       margin-bottom:20px;
     }
 
+    #searchLanguage{
+      max-width:475px;
+    }
+
     .modal-files-names{
 
       ul{
@@ -365,6 +370,11 @@ input[type="text"].form-control{
 
   .modal-footer{
     padding:20px;
+
+    p{
+      position: absolute;
+      left: 2rem;
+    }
   }
 
 }
@@ -553,21 +563,26 @@ input[type="text"].form-control{
 
 .filters-wrapper{
 
-  .full-list-link{
+  .filter-action-link{
     text-transform:uppercase;
     font-weight: bold;
     font-size: 12px;
     letter-spacing: 0.05em;
 
-    img{
-      margin-top:-1px;
-      margin-right:5px;
+    i{
+      margin-top:-2px;
+      font-size:18px;
+      margin-right:2px;
     }
   }
 }
 
 .material-icons{
   vertical-align:middle;
+
+  &.small-width{
+    width:20px;
+  }
 }
 
 .grey{
