@@ -8,7 +8,13 @@ import * as ADMIN from './admin';
     $(document).ready(() => {
         $('[data-toggle="tooltip"]').tooltip();
         $('thead input[type="checkbox"]').on("click", function(){
-          $(this).closest('table').find('tbody input[type="checkbox"]').prop('checked', true);
+          if ($(this).is(':checked')) {
+            $(this).closest('table').find('tbody input[type="checkbox"]').prop('checked', true);
+            $('.all-actions').css('visibility','visible');
+          }else{
+            $(this).closest('table').find('tbody input[type="checkbox"]').prop('checked', false);
+            $('.all-actions').css('visibility','hidden');
+          }
         });
         MODALS.initModalConfirm();
         MODALS.initModalZip();

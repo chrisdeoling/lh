@@ -68,7 +68,11 @@
                 </div>
               </div>
               <div class="col">
-                <a href="#" class="full-list-link"><i class="material-icons">assignment</i> See full list</a>
+                <a href="#" data-toggle="modal" data-target="#langModal" class="full-list-link filter-action-link"><i class="material-icons">assignment</i> See full list</a>
+              </div>
+              <div class="col-md-4 text-right all-actions" style="visibility:hidden;">
+                <a href="#" class="delete-all-link mr-3 filter-action-link"><i class="material-icons">delete</i> Delete all</a>
+                <a href="#" class="favorite-all-link filter-action-link"><i class="material-icons small-width">star_rate</i> Mark as Favorite</a>
               </div>
             </div>
           </div>
@@ -96,8 +100,8 @@
                         </div>
                       </td>
                       <td class="icons text-right">
-                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorites-link"><i class="material-icons">star_rate</i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="remove-link"><img src="assets/images/delete_icon.svg"/></a>
+                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorite-link"><i class="material-icons">star_rate</i></a>
+                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="delete-link"><img src="assets/images/delete_icon.svg"/></a>
                       </td>
                     </tr>
                     <tr>
@@ -108,8 +112,8 @@
                         </div>
                       </td>
                       <td class="icons text-right">
-                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorites-link checked"><i class="material-icons">star_rate</i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="remove-link"><img src="assets/images/delete_icon.svg"/></a>
+                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorite-link checked"><i class="material-icons">star_rate</i></a>
+                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="delete-link"><img src="assets/images/delete_icon.svg"/></a>
                       </td>
                     </tr>
                     <tr>
@@ -120,8 +124,8 @@
                         </div>
                       </td>
                       <td class="icons text-right">
-                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorites-link checked"><i class="material-icons">star_rate</i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="remove-link"><img src="assets/images/delete_icon.svg"/></a>
+                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorite-link checked"><i class="material-icons">star_rate</i></a>
+                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="delete-link"><img src="assets/images/delete_icon.svg"/></a>
                       </td>
                     </tr>
                     <tr>
@@ -132,8 +136,8 @@
                         </div>
                       </td>
                       <td class="icons text-right">
-                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorites-link"><i class="material-icons">star_rate</i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="remove-link"><img src="assets/images/delete_icon.svg"/></a>
+                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorite-link"><i class="material-icons">star_rate</i></a>
+                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="delete-link"><img src="assets/images/delete_icon.svg"/></a>
                       </td>
                     </tr>
                     <tr>
@@ -144,8 +148,8 @@
                         </div>
                       </td>
                       <td class="icons text-right">
-                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorites-link"><i class="material-icons">star_rate</i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="remove-link"><img src="assets/images/delete_icon.svg"/></a>
+                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorite-link"><i class="material-icons">star_rate</i></a>
+                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="delete-link"><img src="assets/images/delete_icon.svg"/></a>
                       </td>
                     </tr>
                     <tr>
@@ -156,8 +160,8 @@
                         </div>
                       </td>
                       <td class="icons text-right">
-                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorites-link"><i class="material-icons">star_rate</i></a>
-                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="remove-link"><img src="assets/images/delete_icon.svg"/></a>
+                        <a href="#" data-toggle="tooltip" title="Favorite" data-confirm="" class="favorite-link"><i class="material-icons">star_rate</i></a>
+                        <a href="#" data-toggle="tooltip" title="Delete" data-confirm="" class="delete-link"><img src="assets/images/delete_icon.svg"/></a>
                       </td>
                     </tr>
                   </tbody>
@@ -165,6 +169,88 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="langModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="langModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Enable languages</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <img src="assets/images/cancel_icon.svg">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-label">Select languages</div>
+          <div class="inner-addon">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <input type="text" name="searchLanguage" id="searchLanguage" class="form-control input-append" placeholder="Search language">
+            <img role="img" src="assets/images/search_icon.svg">
+          </div>
+          <div class="languages-list">
+            <ul>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-all">
+                  <label class="custom-control-label" for="modal-checkbox-lang-all"><b>All languages (255)</b></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="languages-list languages-scrolled-list">
+            <ul>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-1">
+                  <label class="custom-control-label" for="modal-checkbox-lang-1">Afrikaans</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-2">
+                  <label class="custom-control-label" for="modal-checkbox-lang-2">Albanian</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-3">
+                  <label class="custom-control-label" for="modal-checkbox-lang-3">Amharic</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-4">
+                  <label class="custom-control-label" for="modal-checkbox-lang-4">Arabic (Egyptia Spoken)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-5">
+                  <label class="custom-control-label" for="modal-checkbox-lang-5">Arabic (Levantine)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-6">
+                  <label class="custom-control-label" for="modal-checkbox-lang-6">Arabic (Modern Standard)</label>
+                </div>
+              </li>
+              <li>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="modal-checkbox-lang-7">
+                  <label class="custom-control-label" for="modal-checkbox-lang-7">Arabic</label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p><b>Selected languages (<span>12</span>)</b></p>
+          <button type="button" class="btn btn-icon" data-dismiss="modal"><img src="assets/images/cancel_icon.svg"> Cancel</button>
+          <button type="button" class="btn btn-icon btn-confirm btn-turquoise"><i class="material-icons">save</i> Enable</button>
         </div>
       </div>
     </div>
