@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/jstree/dist/themes/default/style.min.css">
-  <link rel="stylesheet" href="dist/style.css">
 </head>
 <body>
 
@@ -66,19 +65,15 @@
   <div class="page mt-4">
     <div class="container">
       <div class="row">
-        <div class="col walktrough">
-          <div class="walktrough-close"><img src="assets/images/walk_close.svg"></div>
-          <p>WALKTHROUGH</p>
-          <p>Select drive and files for transaltion. </p>
-        </div>
+        <div class="col-md-2 col-xs-12"></div>
         <div class="col-md-8 col-xs-12">
             <div class="row">
               <div class="col">
-                <div class="form-group">
+                <div class="form-group mt-2">
                   <label for="project-name">* Project Name</label>
                   <input type="text" name="name" id="project-name" class="form-control" placeholder="Name of the project..." required>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-4">
                   <label for="client">* Client</label>
                   <select class="form-control custom-select" id="client" required>
                     <option value="">- select -</option>
@@ -87,18 +82,24 @@
                     <option>Client 3</option>
                   </select>
                 </div>
+                <div class="form-group mt-4">
+                  <label for="project-deadline">Due date</label>
+                  <input type="text" name="deadline" id="project-deadline" class="form-control" placeholder="dd/mm/yy">
+                </div>
               </div>
               <div class="col">
-                <div class="form-group">
+                <div class="form-group mt-2">
                   <label for="project-name">Source Language</label>
+                  <input type="text" name="name" id="project-name" class="form-control" placeholder="Name of the project..." required>
+                </div>
+                <div class="form-group mt-4">
+                  <label for="project-name">Target Language</label>
                   <input type="text" name="name" id="project-name" class="form-control" placeholder="Name of the project..." required>
                 </div>
               </div>
             </div>
         </div>
-        <div class="col">
-
-        </div>
+        <div class="col-md-2 col-xs-12"></div>
       </div>
     </div>
 

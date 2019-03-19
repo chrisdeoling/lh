@@ -240,9 +240,10 @@ label{
 }
 
 select.form-control{
-  border-radius: 6px;
+  border-radius: 3px;
   position: relative;
 }
+
 
 select.custom-select{
   background-image:url("/assets/images/select_bg.png");
@@ -250,24 +251,32 @@ select.custom-select{
   background-position: right center;
 }
 
+/*
+select:after{
+  content: "<";
+  position: absolute;
+  right:10px;
+  width:50px;
+  height: 50px;
+  border-left: 1px solid #CEE0E3;
+  background-color: #000000;
+}
+*/
+
 .form-control{
   background: #FFFFFF;
   border: 1px solid map_get($colors, 'input-border');
   box-sizing: border-box;
   border-radius: 3px;
   padding-left:15px;
-  font-size:15px;
   height:48px;
   font-size:16px;
+
   color:map_get($colors, 'navy-text');
 
   &:focus{
     border: 1px solid #27505D;
   }
-}
-
-input[type="text"].form-control{
-  font-size:18px;
 }
 
 .inner-addon {
@@ -436,7 +445,6 @@ input[type="text"].form-control{
 
 .page{
   padding-bottom: 100px;
-  padding-top:0px;
 }
 
 .tabs-menu{
